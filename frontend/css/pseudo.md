@@ -32,14 +32,9 @@ CSS를 사용하다보면 심심치 않게 가상 요소 선택자나 가상 클
 `:link ▶ :visited ▶ :hover ▶ :active`
 순서이다. 이 순서가 어긋나면 css가 제대로 동작하지 않을 수 있으니 꼭 순서를 지켜서 작성하도록 하자.
 
-### 자주 사용되는 가상 클래스 선택자 사용해보기
+### 직접 사용해보기
 
-<p class="codepen" data-height="300" data-theme-id="dark" data-default-tab="css,result" data-slug-hash="abERXep" data-user="RETURNREASON" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/RETURNREASON/pen/abERXep">
-  가상 클래스 선택자</a> by YOU (<a href="https://codepen.io/RETURNREASON">@RETURNREASON</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+https://codepen.io/RETURNREASON/pen/abERXep
 
 ---
 
@@ -57,12 +52,11 @@ CSS를 사용하다보면 심심치 않게 가상 요소 선택자나 가상 클
 
 <br>
 
-<p class="codepen" data-height="300" data-theme-id="dark" data-default-tab="css,result" data-slug-hash="PoEygBb" data-user="RETURNREASON" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/RETURNREASON/pen/PoEygBb">
-  가상 요소 선택자</a> by YOU (<a href="https://codepen.io/RETURNREASON">@RETURNREASON</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+
+### 직접 사용해보기
+
+https://codepen.io/RETURNREASON/pen/PoEygBb
 
 가상 요소 선택자 중에 가장 흔히 사용되는 `::after`를 사용하여 박스를 디자인해보았다.
 
