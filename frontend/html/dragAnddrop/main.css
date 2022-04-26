@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+div,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+li {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  display: flex;
+}
+
+.menu-container {
+  background: #eee;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-container h2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.menu-list {
+  padding: 10px;
+  height: 100vh;
+  width: 30%;
+  text-align: center;
+}
+
+.menu-item {
+  padding: 5px;
+  background: #fff;
+  margin: 5px;
+  margin-bottom: 20px;
+  padding: 5px;
+  border-radius: 5px;
+  text-align: center;
+  cursor: move;
+}
+
+.dragging {
+  opacity: 0.5;
+}
+
+.drag-here {
+  background: rgb(157, 165, 203);
+  width: 100%;
+}
+
+.drag-here h2 {
+  padding: 20px;
+  color: #fff;
+}

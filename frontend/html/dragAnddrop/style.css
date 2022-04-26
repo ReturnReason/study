@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color: rgb(77, 76, 121);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.play-time {
+  font-size: 3rem;
+  margin-top: 20px;
+  color: var(--color);
+}
+
+ul {
+  margin-top: 10px;
+  list-style: none;
+  border: 2px solid var(--color);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+li {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #eee;
+  color: #aaa;
+  background: url('http://placeimg.com/400/400/any');
+}
+
+.start-btn {
+  margin-top: 20px;
+  color: #fff;
+  padding: 10px 20px;
+  background: var(--color);
+  border: none;
+  border-radius: 5px;
+}
+
+.clear-txt {
+  position: absolute;
+  font-size: 45px;
+  color: burlywood;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  display: none;
+}
