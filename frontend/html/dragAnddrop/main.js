@@ -104,8 +104,6 @@ imgContainer.addEventListener('drop', (e) => {
     return;
   }
 
-  checkStatus();
-
   const obj = e.target;
 
   if (obj.className !== dragged.class) {
@@ -118,22 +116,28 @@ imgContainer.addEventListener('drop', (e) => {
       originPlace = dragged.el.previousSibling;
       isLast = true;
     }
-    const droppedInedx = [...obj.parentNode.children].indexOf(e.obj);
+    const droppedInedx = [...obj.parentNode.children].indexOf(obj);
     dragged.index > droppedInedx ? obj.before(dragged.el) : obj.after(dragged.el);
     isLast ? originPlace.after(obj) : originPlace.before(obj);
   }
+
+  checkStatus();
 });
 
 function checkStatus() {
   const currentList = [...imgContainer.children];
   const unMatchedList = currentList.filter((child, idx) => {
-    return Number(child.getAttribute('data-index')) !== idx;
+    Number(child.getAttribute('data-idx')) !== idx;
   });
+
   if (unMatchedList.length === 0) {
-    gameTxt.style.display = 'block';
+    // gameTxt.style.display = 'block';
     let isPlaying = false;
     clearInterval(timeInterval);
   }
+
+  // console.log(currentList);
+  // console.log(unMatchedList);
 }
 
 /*
