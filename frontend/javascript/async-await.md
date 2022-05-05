@@ -7,7 +7,7 @@ await은 반드시 async 함수에서만 유효하기 때문에 async 함수 바
 `async`함수는 항상 `Promise`를 반환한다. 반환값이 promise가 아니면 암묵적으로 promise가 된다.
 
 <br>
-
+g
 ## async 사용법
 
 ```javascript
