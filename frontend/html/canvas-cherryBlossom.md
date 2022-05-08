@@ -13,9 +13,11 @@
 덕분에 잘 했습니당..............ㅎㅎㅎㅎ
 <br>
 
-![](https://velog.velcdn.com/images/reasonz/post/4b4ee47e-3adf-4716-9e76-513bc6935888/image.gif)
+![Honeycam 2022-05-08 16-26-52](https://user-images.githubusercontent.com/48672106/167286845-5437c659-3c2e-4a56-8580-5e30c60afd8e.gif)
 
-![](https://velog.velcdn.com/images/reasonz/post/6ef8ed57-1364-46e5-8e0d-d76c3fa16186/image.gif)
+
+![Honeycam 2022-05-08 16-32-27](https://user-images.githubusercontent.com/48672106/167286856-0c54e8bd-6cf3-4a8c-8bed-52c44c7124f6.gif)
+
 
 벚꽃 사진을 공유해주신 분이 워낙 잘 찍으신 것도 있지만,
 맛있는 코딩님 영상보고 따라친 벚꽃 흩날리는 코드와 함께 적용하니 더 생동감이 느껴졌다.
