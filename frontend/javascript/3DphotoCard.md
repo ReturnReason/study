@@ -21,7 +21,8 @@ centerY = top - (height/2)
 
 중심을 기준으로 한 centerX와 centerY 값을 구했으므로 기울여주면 되는데 기울일 때 사용할 수 있는 속성은 CSS의 transfrom : rotate3d를 이용하면 된다.
 
-![](https://velog.velcdn.com/images/reasonz/post/932ba286-bd6c-4a43-adff-89df704c38a3/image.gif)
+![Honeycam 2022-05-09 18-20-48](https://user-images.githubusercontent.com/48672106/167384096-8572ee80-8363-4f50-98f5-32a016695571.gif)
+
 
 완성하면 위와 같이 카드 안에서 마우스 위치에 따라 포토카드에 그림자, 카드 기울기, 빛반사 등의 효과가 추가된다.
 
