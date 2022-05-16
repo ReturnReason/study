@@ -56,9 +56,13 @@ function clickHandler(event) {
 <br>
 
 `clientY`와 `clientX` : 현재 보이는 브라우저 크기 위치를 기준으로 x와 y값이 출력된다. (스크롤 길이는 무시)
+
 `offsetY`와 `offsetX` : 이벤트 대상을 기준으로 x와 y 좌표가 반환된다.
+
 `pageY`와 `pageX` : 전체 문서를 기준으로 x와 y값이 반환된다. (스크롤 길이 포함)
+
 `screenY`와 `screenX` : 브라우저가 아닌 모니터 화면을 기준으로 좌표를 반환한다.
+
 `layerY`와 `layerX` : 현재 레이어를 기준으로 수평 좌표를 반환한다.
 
 <br>
@@ -99,7 +103,7 @@ function clickHandler(event) {
 
 <br>
 
-y와 clientY는가 동일했고
+y와 clientY가 동일했고
 layerY, pageY가 동일한 값을 반환했으며
 screenY는 784, tiltY는 0을 출력했다.
 캔버스의 높이가 1000px인 것을 감안하면 offsetY가 캔버스 y값을 출력했다고 보여진다.
