@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>슬라이드 만들기</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      list-style: none;
+    }
+
+    .slide-container {
+      width: 800px;
+      overflow: hidden;
+      margin: 0 auto;
+    }
+
+    .slide-title {
+      margin: 10px;
+      font-weight: bold;
+      font-size: 20px;
+    }
+    .slide {
+      display: flex;
+      transition: all 1s;
+    }
+
+    .slide li img {
+      border-radius: 10px;
+      width: 800px;
+    }
+
+    .btn {
+      padding: 5px 15px;
+      border: none;
+      border-radius: 5px;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    .btn-container {
+      display: flex;
+      justify-content: flex-end;
+      gap: 5px;
+    }
+
+    .prev-btn {
+      background: rgb(63, 63, 63);
+    }
+
+    .next-btn {
+      background: rgb(70, 93, 196);
+    }
+  </style>
+  <body>
+    <div class="slide-container">
+      <h2 class="slide-title">이달의 소녀 전희진</h2>
+      <ul class="slide">
+        <li>
+          <img src="./img/img0.png" alt="" />
+        </li>
+        <li>
+          <img src="./img/img1.png" alt="" />
+        </li>
+        <li>
+          <img src="./img/img2.png" alt="" />
+        </li>
+      </ul>
+      <div class="btn-container">
+        <button class="prev-btn btn">prev</button>
+        <button class="next-btn btn">next</button>
+      </div>
+    </div>
+
+    <script>
+      const nextBtn = document.querySelector('.next-btn');
+      const prevBtn = document.querySelector('.prev-btn');
+      const slide = document.querySelector('.slide');
+      const slideLength = document.querySelectorAll('.slide li').length;
+      let currentSlide = 1;
+      const IMAGE_WIDTH = 800;
+
+      // 다음 버튼 클릭
+      nextBtn.addEventListener('click', next);
+      function next() {
+        console.log(currentSlide);
+
+        if (currentSlide >= slideLength) {
+          currentSlide = 0;
+        }
+        slide.style.transform = `translateX(-${IMAGE_WIDTH * currentSlide}px)`;
+        currentSlide++;
+      }
+
+      // 이전 버튼 클릭
+      prevBtn.addEventListener('click', prev);
+      function prev() {
+        if (currentSlide === 1) {
+          currentSlide = slideLength;
+        } else {
+          currentSlide--;
+        }
+        slide.style.transform = `translateX(-${IMAGE_WIDTH * (currentSlide - 1)}px)`;
+      }
+    </script>
+  </body>
+</html>
