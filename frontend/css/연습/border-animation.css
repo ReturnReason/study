@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Oleo Script Swash Caps', cursive;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: rgb(240, 240, 240);
+  position: relative;
+}
+
+.box {
+  position: relative;
+  width: 300px;
+  height: 500px;
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.5s;
+  flex-direction: column;
+}
+
+.box:hover {
+  transform-style: preserve-3d;
+  perspective: 200px;
+  transform: rotateZ(20deg);
+}
+
+.box::after {
+  content: '';
+  position: absolute;
+  width: 800px;
+  height: 700px;
+  background-image: conic-gradient(transparent, transparent, transparent, #d8c5ff, transparent);
+  animation: animate 4s linear infinite;
+  animation-delay: -2s;
+}
+
+.box::before {
+  content: '';
+  position: absolute;
+  width: 800px;
+  height: 700px;
+  background-image: conic-gradient(#fff, #99c9e7, #99c9e7, #99c9e7, #fff);
+  animation: animate 2s alternate infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.box span {
+  position: absolute;
+  inset: 5px;
+  background: rgb(255, 255, 255);
+  /* background: url(./IU.jpg); */
+  background-position: center;
+  border-radius: 15px;
+  z-index: 1;
+  font-size: 50px;
+  text-align: center;
+}
+
+.box span::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  /* background: rgba(229, 248, 255, 0.371); */
+}
+
+.box h1 {
+  font-size: 100px;
+  display: block;
+  z-index: 10;
+  position: absolute;
+  left: 15%;
+  top: 25%;
+  color: transparent;
+  background: conic-gradient(#d8c5ff, #99c9e7);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.box h2 {
+  display: block;
+  font-size: 40px;
+  z-index: 5;
+  position: relative;
+  overflow: hidden;
+  color: transparent;
+  background: conic-gradient(#d8c5ff, #99c9e7);
+  -webkit-background-clip: text;
+  background-clip: text;
+  position: absolute;
+  left: 18%;
+  top: 46%;
+}
+
+.box h2::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.box-deco {
+  content: '';
+  top: 0;
+  left: 0;
+  background: linear-gradient(-15deg, transparent, transparent, transparent, transparent, rgba(235, 226, 255, 0.403));
+  border-radius: 15px;
+  position: absolute;
+  inset: 10px;
+  z-index: 4;
+  overflow: hidden;
+}
+
+.box-deco .wave {
+  background: url('./img.svg') no-repeat;
+  width: 400px;
+  height: 30%;
+  z-index: 10;
+  position: absolute;
+  left: 0;
+  bottom: -70px;
+  animation: waves linear infinite;
+}
+
+.box-deco .wave.two {
+  height: 31.5%;
+  opacity: 0.5;
+  transform: translateX(-30px);
+}
+
+@keyframes waves {
+  0% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.box-back {
+  width: 300px;
+  height: 500px;
+  transform: rotateY(180deg);
+  background: rgb(40, 40, 40);
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.box-back:hover {
+  backface-visibility: visible;
+}

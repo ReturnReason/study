@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_wave" data-name="wave" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 113 45.31">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#gradient1);
+      }
+    </style>
+    <linearGradient id="gradient1" data-name="gradient1" x1="94.22" y1="66.04" x2="16.14" y2="-20.34" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#99c9e7"/>
+      <stop offset="1" stop-color="#d8c5ff"/>
+    </linearGradient>
+  </defs>
+  <path class="cls-1" d="M0,4.31S13-4.69,30,3.31s25,10,39,7S98-3.69,113,3.31V45.31H0V4.31Z"/>
+</svg>
