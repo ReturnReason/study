@@ -5,7 +5,7 @@
 [JavaScript](https://github.com/ReturnReason/study/tree/main/frontend/javascript)<br>
 [typescript](https://github.com/ReturnReason/study/tree/main/frontend/typescript)<br>
 <br>
-프레임워크<br>
+프레임워크, 라이브러리<br>
 [Vue](https://github.com/ReturnReason/study/tree/main/frontend/vue)<br>
 [React](https://github.com/ReturnReason/study/tree/main/frontend/react)<br>
 <br>
